@@ -23,8 +23,8 @@
     font-family: 'GROBOLD','Open Sans Condensed', arial, sans;
     width: 500px;
     padding: 30px;
-    background: transparent;
-    margin: 190px auto;
+    background-color: rgb(17,49,59, 0.7);
+    margin: 150px auto;
     position: absolute;
     top:0;
     bottom: 0;
@@ -36,7 +36,7 @@
 
 }
 .form-style-8 h2{
-    background: #690066;
+    background: #f1d264;
     text-transform: uppercase;
     font-family: 'GROBOLD,' 'Open Sans Condensed', sans-serif;
     color: white;

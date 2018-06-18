@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=400, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mystyle.css">
     <script src="index.js"></script>
     <script src="//ucarecdn.com/libs/widget/3.3.0/uploadcare.full.min.js"></script>
-    <title>World of Fortnite: Video Submission</title>
+    <title>World of Fortnite: Replay Submission</title>
 </head>
 
 <body>
     <div class="bg">
         <div class="form-style-8">
-            <h2>Submit Video</h2>
-            <form method="POST" name="Form" onsubmit="return validateContentNotEmpty()" action="https://formspree.io/oliverglandberger@gmail.com">
+            <h2>Submit Replay</h2>
+            <form method="POST" name="Form" onsubmit="return validateContentNotEmpty()" action="https://formspree.io/wofsubmissions@gmail.com">
                 <input type="hidden" name="_subject" value="New Video" />
                 <input type="text" name="name" placeholder="In-Game Name..." required/>
                 <input type="email" name="_replyto" placeholder="Email..." required/>
                 <select class="form-control" name="typeofplay" type="text" required>
                     <option value="">Type of Play...</option>
+                    <option value="bigplay">Big Play!</option>
+                    <option value="building">Building</option>
                     <option value="skillshot">Skill Shot</option>
                     <option value="lucky">Lucky Moment</option>
                     <option value="wtf">WTF Moment</option>
                     <option value="other">Other</option>
                 </select>
                 <textarea name="shortdescription" placeholder="Short Description..." onkeyup="adjust_textarea(this)"></textarea>
+                <input type="text" name="timestamp" placeholder="Time Stamp (mm:ss)" pattern="[0-9][0-9]:[0-9][0-9]">
                 <p class="uploader-button">
                 <input type="hidden" role="uploadcare-uploader" style="color: #f1d264" name="file" data-file-types="avi AVI mp4 MP4 mov MOV replay REPLAY" data-min-size="5000000"
                     data-max-size="30000000" />
